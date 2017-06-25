@@ -35,7 +35,7 @@ public class Stack{
 		if (topOfStack < 0) {
 			System.out.println("Stack is empty !!");
 		}
-		return System.out.println("Item on top of stack: " + stck[topOfStack]);
+		System.out.println("Item on top of stack: " + stck[topOfStack]);
 	}
 
 }
