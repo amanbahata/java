@@ -10,8 +10,8 @@ public class Stack{
 
 
 	// Initialize the stack
-	public Stack(){
-		stck = new int[10];  
+	public Stack(int spaces){
+		stck = new int[spaces];  
 		topOfStack = -1;
 	}
 
@@ -46,7 +46,6 @@ public class Stack{
 			return 0;
 		}
 		int temp = stck[topOfStack];
-		stck[topOfStack] = null;
 		topOfStack--;
 		return temp;
 	}
