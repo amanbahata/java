@@ -9,7 +9,10 @@ public class StackTester{
 		Stack stack1 = new Stack();
 
 		stack1.push(3);
+		stack1.peek();
+		
 		stack1.push(4);
+		stack1.peek();
 	
 	}
 }

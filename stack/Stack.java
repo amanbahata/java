@@ -29,6 +29,13 @@ public class Stack{
 		System.out.println(number + " added to the stack.");
 	}
 
-	
+	// Peek the item at the top of the stack
+
+	public void peek(){
+		if (topOfStack < 0) {
+			System.out.println("Stack is empty !!");
+		}
+		return System.out.println("Item on top of stack: " + stck[topOfStack]);
+	}
 
 }
