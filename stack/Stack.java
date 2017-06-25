@@ -29,5 +29,6 @@ public class Stack{
 		System.out.println(number + " added to the stack.");
 	}
 
+	
 
 }
