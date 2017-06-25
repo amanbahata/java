@@ -50,9 +50,9 @@ public class Stack{
 		return temp;
 	}
 
+	// Calculate the size of the stack
 
-
-
-
-
+	public int size(){
+		return stck.length;
+	}
 }
