@@ -38,4 +38,22 @@ public class Stack{
 		System.out.println("Item on top of stack: " + stck[topOfStack]);
 	}
 
+	// Pop the item at the top of the stack
+
+	public int pop(){
+		if (topOfStack < 0) {
+			System.out.println("Can not remove an item from an empty stack.");
+			return 0;
+		}
+		int temp = stck[topOfStack];
+		stck[topOfStack] = null;
+		topOfStack--;
+		return temp;
+	}
+
+
+
+
+
+
 }
