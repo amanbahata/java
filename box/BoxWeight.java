@@ -13,7 +13,7 @@ public class BoxWeight extends Box{
 	}
 
 	public BoxWeight(double width, double height, double length, double weigth){
-		super(double width, double height, double length);
+		super(width, height, length);
 		this.weigth = weight;
 	}
 
