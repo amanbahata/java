@@ -32,7 +32,7 @@ public class Box{
 		length = length;
 	}
 
-	// Define accessor and mutator methods for the fields
+	// Define accessor methods for the fields
 
 	public double getWidth(){
 		return width;
@@ -43,4 +43,26 @@ public class Box{
 	public double getLength(){
 		return length;
 	}
+
+	// Define mutator methods for the fields
+
+	public void getWidth(double width){
+		this.width = width;
+		System.out.println("Box width changed to : " + width);
+	}
+	public void getHeight(double height){
+		this.height = height;
+		System.out.println("Box height changed to : " + height);
+	}
+	public void getLength(double length){
+		this.length = length;
+		System.out.println("Box length changed to : " + length);
+	}
+
+	// Calculate volume of the box
+
+	public double volume(){
+		return width * height * length;
+	}
+
 }
