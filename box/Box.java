@@ -32,7 +32,7 @@ public class Box{
 	public Box(double length){
 		width = length;
 		height = length;
-		length = length;
+		this.length = length;
 	}
 
 	// Define accessor methods for the fields

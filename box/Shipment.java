@@ -2,20 +2,20 @@
 
 public class Shipment extends BoxWeight{
 
-	private cost;
+	private double cost;
 
 	public Shipment(Shipment box){
 		super(box);
 		cost = box.getCost();
 	}
 
-	public Shipment(double width, double height, double length, double weigth, double cost){
-		super(width, height, length, weigth);
+	public Shipment(double width, double height, double length, double weight, double cost){
+		super(width, height, length, weight);
 		this.cost = cost;
 	}
 
 	public Shipment (double length, double weight, double cost){
-		super(length, weigth);
+		super(length, weight);
 		this.cost = cost;
 	}
 

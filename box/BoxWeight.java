@@ -12,23 +12,18 @@ public class BoxWeight extends Box{
 		weight = box.getWeight();
 	}
 
-	public BoxWeight(double width, double height, double length, double weigth){
+	public BoxWeight(double width, double height, double length, double weight){
 		super(width, height, length);
-		this.weigth = weight;
+		this.weight = weight;
 	}
 
 	public BoxWeight(double length, double weight){
 		super(length);
-		this.weight = weigth;
+		this.weight = weight;
 	}
 
 	public double getWeight(){
 		return weight;
-	}
-
-	public void setWeight(double weigth){
-		this.weigth = weigth;
-		System.out.println("Box weigth changed to : " + weigth);
 	}
 
 }
