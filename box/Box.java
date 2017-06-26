@@ -1,5 +1,6 @@
 /**
-*	
+* 	Class Box models a cardboard box used for shipment of items
+*	@author Aman Bahata
 *
 */
 
@@ -17,8 +18,10 @@ public class Box{
 		length = box.getLength();
 	}
 
-	// Constructor used when all dimensions specified
+	// Constructor used when all dimensions have been specified specified
 	public Box(double width, double height, double length){
+
+		// Sizes of the box
 		this.width = width;
 		this.height = height;
 		this.length = length;
