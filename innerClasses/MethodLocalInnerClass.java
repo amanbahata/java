@@ -7,18 +7,22 @@ class MethodLocalInnerClass{
 
 	private int number = 5;
 
+	public MethodLocalInnerClass(int number){
+		this.number = number;
+	}
+
+
 	public void createAndRunInnerClass(){
 
-		// innder class local to method
+		// inner class local to method
 		class InnerClass{
 			public void display(){
-				System.out.println("Hello from method of iiner class " + this.number);
+				System.out.println("Hello from method of inner class, the value of the instance variable is :  " + number);
 			}
 		}
 
 		// inistantiate inner class
-
 		InnerClass inClass = new InnerClass();
-		inClass.display;
+		inClass.display();
 	}
 }
