@@ -21,10 +21,21 @@ public class StackTester{
 		stack1.peek();
 
 
-		// push continuus numbers to stack2
-		for (int i = 0; i < stack2.size() ; i++ ) {
+		// push continuos numbers to stack2
+		for (int i = 1; i < stack2.size() ; i++ ) {
 			stack2.push(i);
 		}
 		stack2.peek();
+		System.out.println(stack2.size());
+		stack2.pop();
+		System.out.println(stack2.size());
+
+		int temp;
+
+		do {
+			temp = stack2.pop();
+		}while(temp > 0);
+		
+		
 	}
 }
