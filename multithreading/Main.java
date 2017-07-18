@@ -8,5 +8,10 @@ public class Main {
 		MyThread thread = new MyThread();
 
 		thread.start();
+
+		for (int i = 0; i < iterations ; i++ ) {
+			System.out.println("Output from the main process");
+			Thread.sleep(3000);
+		}
 	}
 }
