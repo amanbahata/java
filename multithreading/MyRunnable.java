@@ -7,7 +7,7 @@ public class MyRunnable implements Runnable{
 
 		try{
 				for (int i = 0;i < iterations ;i++ ) {
-				System.out.println("Output from the third thread");
+				System.out.println("Output from runnable");
 				Thread.sleep(10000);
 			
 			}

@@ -7,7 +7,10 @@ public class Main {
 
 		MyThread thread = new MyThread();
 
+		MyRunnable runnable = new MyRunnable();
+
 		thread.start();
+		new Thread(runnable).start();
 
 		try{
 			for (int i = 0; i < iterations ; i++ ) {
