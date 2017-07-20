@@ -1,5 +1,5 @@
 /**
-* Exsercise with javas built in datastructures
+* Exsercise with java built in datastructures
 * Arrays and java inbuilt lists
 */
 
