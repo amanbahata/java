@@ -9,9 +9,17 @@ public class Main{
 		// Arrays
 		int[] myIntArray = new int[10];
 
-		myIntArray[5] = 50;
-		myIntArray[0] = 70;
-		myIntArray[9] = 100;
+		// myIntArray[5] = 50;
+		// myIntArray[0] = 70;
+		// myIntArray[9] = 100;
+
+		// fill the array with consecutive intigers from 1 - 10
+
+		for (int i = 0; i < myIntArray.length ; i++ ) {
+			myIntArray[i] = i + 1;
+		}
+
+
 
 		double[] myDoubleArray = new double[5];
 
