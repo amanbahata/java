@@ -12,4 +12,12 @@ public class Car extends Vehicle{
 		this.doors = doors;
 		this.engineCapacity = engineCapacity;
 	}
+
+	public int getDoors(){
+		return this.doors;
+	}
+	public int getEngineCapacity(){
+		return this.engineCapacity;
+	}
+
 }
