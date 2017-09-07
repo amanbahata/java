@@ -27,7 +27,7 @@ public class Main extends Application {
         // Attach the circle to root so it can be displayed
         root.getChildren().add(cir);
 
-        primaryStage.setTitle("Hello World");
+        primaryStage.setTitle("Circle drawing tutorial");
         primaryStage.setScene(new Scene(root, 300, 275));
         primaryStage.show();
     }
