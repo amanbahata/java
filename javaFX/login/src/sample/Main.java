@@ -32,7 +32,7 @@ public class Main extends Application {
 
         Scene scene = new Scene(grid, 300, 275);
 
-        Text scenetitle = new Text("Please log in here......");
+        Text scenetitle = new Text("Please log in:");
         scenetitle.setFont(Font.font("Tahoma", FontWeight.NORMAL, 20));
 
         Label userName = new Label("User Name");
