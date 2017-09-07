@@ -1,4 +1,4 @@
-package sample;
+package login;
 
 import javafx.application.Application;
 import javafx.geometry.Insets;
@@ -62,6 +62,7 @@ public class Main extends Application {
             actionTarget.setText("Sign in button pressed");
         });
 
+        scene.getStylesheets().add(Main.class.getResource("Login.css").toExternalForm());
         primaryStage.setTitle("JavaFX login page");
         primaryStage.setScene(scene);
         primaryStage.show();
