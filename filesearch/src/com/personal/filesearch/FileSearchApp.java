@@ -42,6 +42,7 @@ public class FileSearchApp {
 
     }
 
+    // Uses java8 to go through the lit of files recursively by way of streams
 
     public void walkDirectory(String path) throws IOException {
         Files.walk(Paths.get(path)).forEach(f -> processFile(f.toFile()));
@@ -49,6 +50,7 @@ public class FileSearchApp {
 
 
 
+    // Displays the relative path names of files
 
     public void processFile(File file) {
         System.out.println("processfile: " + file);
