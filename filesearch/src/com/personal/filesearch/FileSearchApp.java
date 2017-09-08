@@ -1,6 +1,9 @@
 package com.personal.filesearch;
 
 import java.io.File;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 
 /**
  * Created by aman1 on 08/09/2017.
@@ -21,7 +24,7 @@ public class FileSearchApp {
         FileSearchApp app = new FileSearchApp();
 
         switch (Math.min(args.length, 3)){
-            case 0 : System.out.println("USAGE: FileSearchApp path [regex] [zipfile]");
+            case 0 : System.out.println("USAGE: FileSearchApp [path] [regex] [zipfile]");
                     return;
             case 3 : app.setZipFileName(args[2]);
             case 2 : app.setPath(args[1]);
@@ -39,10 +42,17 @@ public class FileSearchApp {
     }
 
 
-    public void walkDirectory(String path){
+    public void walkDirectory(String path) throws IOException{
+
+        Files.walk(Paths.get(path)).forEach( f -> processFile(f.toFile()));
+
         System.out.println("Directory: " + path );
         searchFile(null);
         addFileToZip(null);
+    }
+
+    private void processFile(File file) {
+        System.out.println("processFile: " + file);
     }
 
 
