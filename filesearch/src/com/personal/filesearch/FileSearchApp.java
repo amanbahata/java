@@ -1,10 +1,15 @@
 package com.personal.filesearch;
 
 
+import com.sun.xml.internal.ws.policy.privateutil.PolicyUtils;
+
 import java.io.File;
 import java.io.IOException;
+import java.io.UncheckedIOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
+import java.rmi.UnexpectedException;
+import java.util.Arrays;
 
 /**
  * Created by aman1 on 08/09/2017.
@@ -50,10 +55,37 @@ public class FileSearchApp {
 
 
 
+
+
     // Displays the relative path names of files
 
-    public void processFile(File file) {
-        System.out.println("processfile: " + file);
+    public void processFile(File file){
+
+        try {
+            if (searchFile(file)){
+                addFileToZip(file);
+            }
+        } catch (IOException | UncheckedIOException e) {
+            System.out.println("Error processing files: " + file + ":" + e);
+        }
+
+        System.out.println("processFile: " + file);
+
+    }
+
+    private boolean searchFile(File file) throws IOException {
+        return Files.lines(file.toPath()).anyMatch(t -> searchText(t));
+    }
+
+    private boolean searchText(String t) {
+        if (this.getRegex() == null){
+            return true;
+        }
+        return t.toLowerCase().contains(this.getRegex().toLowerCase());
+    }
+
+    public void addFileToZip(File file){
+        System.out.println("addFileToZip: " + file);
     }
 
 
